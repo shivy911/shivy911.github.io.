@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Letter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        #revealButton {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #letter {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="revealButton">Click to Reveal the Letter</button>
+        <div id="letter">
+            <h2>Dear [Recipient's Name],</h2>
+            <p>
+                [Your letter content goes here. Write your heartfelt message, expressing your thoughts and feelings.]
+            </p>
+            <p>
+                [Continue your letter...]
+            </p>
+            <p>
+                Sincerely,<br>
+                [Your Name]
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('revealButton').addEventListener('click', function() {
+            document.getElementById('letter').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
